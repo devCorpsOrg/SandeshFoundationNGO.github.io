@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="with=device=width,initial-scale=1.0">
+        <title>
+            site name 
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">       
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,100;1,300;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!--header start-->
+        <section class="header"> 
+            <nav>                
+                <div style="display:flex;flex-direction:row">
+                <a href="index.html">
+                   <img id="logo" src="sandesh-foundation-Logo.png">                   
+                </a>
+                <div id="name">
+                    <h3>Sandesh Foundation</h3>
+                    <h6>"Always there for one in need"</h6>                    
+                </div>
+                </div>
+                <div class="nav-link" id="navLink">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Gallery</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                    
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            
+        </section>
+        <!--header end-->
+        </body>
+        <!--javaScript for toggle menu-->
+        <script>
+            var navLink = document.getElementById("navLink");
+
+            function showMenu(){
+
+                navLink.style.right = "0";
+
+            }
+            function hideMenu(){
+                navLink.style.right = "-210px"
+            }        
+        </script>
+        <!--javaScript end-->
+        <!--footer start-->
+        <!-- <section class="footer">
+            
+                  <h2>contact us</h2>
+                  <p>
+                      Head Office : H-15 A, Mansarover Park,<br/>Shahdara, Delhi-110032 <br/>Contact Number-9810726391 <br/>Email ID : sandeshfoundation.india@gmail.com,<br/>surender6509@gmail.com
+                  </p>
+                  <div class="icons">
+                      <i class="fa fa-facebook"></i>
+                      <i class="fa fa-twitter"></i>
+                      <i class="fa fa-instagram"></i>
+                      <i class="fa fa-linkedin"></i>
+                  </div>                                
+                </section> -->
+
+                <div class="footer-bottom">
+                    <p>Copyright © 2021 by sandesh foundation trust. </p>
+                </div>
+    </body>
+</html>
