@@ -1,80 +1,375 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="with=device=width,initial-scale=1.0">
-        <title>
-            site name 
-        </title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">       
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,100;1,300;1,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body>
-        <!--header start-->
-        <section class="header"> 
-            <nav>                
-                <div style="display:flex;flex-direction:row">
-                <a href="index.html">
-                   <img id="logo" src="sandesh-foundation-Logo.png">                   
-                </a>
-                <div id="name">
-                    <h3>Sandesh Foundation</h3>
-                    <h6>"Always there for one in need"</h6>                    
+<html>
+<head>
+
+    <title>HPGVSS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">       
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,100;1,300;1,700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+        .blockquote-custom {
+            position: relative;
+            font-size: 1.1rem;
+        }
+
+        .blockquote-custom-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: -25px;
+            left: 50px;
+        }
+        section div.img-conatiner  {
+            background: url("donate.jpg");
+            padding: 60px;
+            height: 300px;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        
+        section div.d-flex div.card{
+            justify-content: center!important;
+            align-items: center!important;
+            text-align: center!important;
+            border:0px!important;
+            width: 33.33%
+        }
+        section div.d-flex div.card img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        section div.stories .card{
+            border:0px;
+            text-align: center;
+        }
+        section.mt-4 div.mt-4 .card{
+            margin: ;
+            border:0px;
+        }
+
+        
+
+        
+        
+        @media screen and (max-width: 600px) {
+            section div.d-flex div.card{
+
+                width: 99%
+            }
+            section div.d-flex {
+                display: block!important;
+            }
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <!--header start-->
+    <div class="nav-bar">
+       <img src="images/logo.jpeg">
+       
+       <div class="menu-right">
+           <span onClick="myFunction()">&#9776;</span>
+           <ul id="menu">
+               <li><a href="index.html">HOME</a></li>    
+               <li><a href="about.html">ABOUT US</a> </li>    
+               <li><a href="gallery.html">GALLERY</a></li>    
+               <li><a href="team.html">OUR TEAM</a></li>    
+               <li><a href="contact.html">CONTACT US</a></li>    
+           </ul>
+       </div>
+       
+       
+   </div>  
+
+   <!--header end--> 
+   <!--javascript start -->
+   <script>
+    function myFunction(){
+     var x = document.getElementById("menu"); 
+     
+     if(x.style.display == "block")
+     {
+        x.style.display = "none";
+    }
+    else{
+        x.style.display = "block";
+    }
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<section>
+        <div class="img-conatiner w-100">
+        </div>
+    </section>
+
+    <section class="mt-3 p-3">
+        <section class="py-5">
+            <div class="container">
+                <!-- FOR DEMO PURPOSE -->
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <header class="text-center pb-5">
+                            <h1 class="h2">What We Do</h1>
+                        </header>
+                    </div>
+                </div><!-- END -->
+
+
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+
+                        <!-- CUSTOM BLOCKQUOTE -->
+                        <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded">
+                            <div class="blockquote-custom-icon bg-info shadow-sm"><i class="fa fa-quote-left text-white"></i></div>
+                            <p class="mb-0 mt-2 font-italic">"Hanuman Prasad Gramin Vikash Sewa Samiti (HPGVSS) is a registered under society act 1860 in 1995.HPGVSS implementing projects for the society development. HPGVSS is a not for profit organization.Implement programs in the areas of livelihoods, health, skill, education and disability."</p>
+                            
+                        </blockquote><!-- END -->
+
+                    </div>
                 </div>
-                </div>
-                <div class="nav-link" id="navLink">
-                    <i class="fa fa-times" onclick="hideMenu()"></i>
-                    <ul>
-                        <li>
-                            <a href="">Home</a>
-                        </li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Gallery</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Contact Us</a></li>
-                    </ul>
+            </div>
+        </section>
+
+        
+    </section>
+    
+
+    <section class="d-flex justify-content-center mt-3 p-3">
+        <div class="d-flex justify-content-center p-2">
+            <div class="card" style="width: 18rem;">
+                <img src="p.jpg" class="card-img-top" alt="p.jpg">
+                <div class="card-body">
+                    <h5 class="card-title text-secondary">Who We Are</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.<a href="#">Learn more</a> </p>
                     
                 </div>
-                <i class="fa fa-bars" onclick="showMenu()"></i>
-            </nav>
-            
-        </section>
-        <!--header end-->
-        </body>
-        <!--javaScript for toggle menu-->
-        <script>
-            var navLink = document.getElementById("navLink");
-
-            function showMenu(){
-
-                navLink.style.right = "0";
-
-            }
-            function hideMenu(){
-                navLink.style.right = "-210px"
-            }        
-        </script>
-        <!--javaScript end-->
-        <!--footer start-->
-        <!-- <section class="footer">
-            
-                  <h2>contact us</h2>
-                  <p>
-                      Head Office : H-15 A, Mansarover Park,<br/>Shahdara, Delhi-110032 <br/>Contact Number-9810726391 <br/>Email ID : sandeshfoundation.india@gmail.com,<br/>surender6509@gmail.com
-                  </p>
-                  <div class="icons">
-                      <i class="fa fa-facebook"></i>
-                      <i class="fa fa-twitter"></i>
-                      <i class="fa fa-instagram"></i>
-                      <i class="fa fa-linkedin"></i>
-                  </div>                                
-                </section> -->
-
-                <div class="footer-bottom">
-                    <p>Copyright © 2021 by sandesh foundation trust. </p>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="p.jpg" class="card-img-top" alt="p.jpg">
+                <div class="card-body">
+                    <h5 class="card-title text-secondary">Help Us</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.<a href="#">Learn more</a> </p>
+                    
                 </div>
-    </body>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="p.jpg" class="card-img-top" alt="p.jpg">
+                <div class="card-body">
+                    <h5 class="card-title text-secondary">Contact Us</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.<a href="#">Learn more</a> </p>
+                    
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+    <section class="mt-4 " style="overflow-x: hidden;">
+        <h3 class="w-100 text-center p-0">Stories of Impact </h3>
+        <div class="stories p-1 mt-4">
+
+
+            <div class="card justify-content-center" style="width: 18rem;">
+                <iframe  src="https://www.youtube.com/embed/yOwKOXlAulE?autoplay=1&amp;mute=1&amp;enablejsapi=1&amp;wmode=transparent" frameborder="0" style="border: solid 2px #37474F" ></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <iframe  src="https://www.youtube.com/embed/yOwKOXlAulE?autoplay=1&amp;mute=1&amp;enablejsapi=1&amp;wmode=transparent" frameborder="0" style="border: solid 2px #37474F" ></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <iframe  src="https://www.youtube.com/embed/yOwKOXlAulE?autoplay=1&amp;mute=1&amp;enablejsapi=1&amp;wmode=transparent" frameborder="0" style="border: solid 2px #37474F" ></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <iframe  src="https://www.youtube.com/embed/yOwKOXlAulE?autoplay=1&amp;mute=1&amp;enablejsapi=1&amp;wmode=transparent" frameborder="0" style="border: solid 2px #37474F" ></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <iframe  src="https://www.youtube.com/embed/yOwKOXlAulE?autoplay=1&amp;mute=1&amp;enablejsapi=1&amp;wmode=transparent" frameborder="0" style="border: solid 2px #37474F" ></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    
+                </div>
+            </div>
+
+        </div>
+
+        
+    </section>
+
+    <section class="mt-5 text-center " style="overflow-x: hidden;">
+        <h3>
+            OUR INTERVENTION AREAS
+        </h3>
+        <div class="mt-4 row ">
+            
+            <div class="card col-sm-12 col-md-4" >
+                
+                <div class="card-body">
+                    <h5 class="card-title">HEALTH</h5>
+                    <p class="card-text">From Mobile health units to prevention programs, HPGVSS Health interventions take a comprehensive approach to providing underprivileged rural healthcare.</p>
+                    
+                </div>
+            </div>
+
+            <div class="card col-sm-12 col-md-4" >
+                
+                <div class="card-body">
+                    <h5 class="card-title">DISABILITY</h5>
+                    <p class="card-text">In the disability space, we seek solutions to provide all-encompassing support to people with all types of disabilities (likes speech, Autism, CP, Plegia, etc) across the country.</p>
+
+                </div>
+            </div>
+            <div class="card col-sm-12 col-md-4" >
+                
+                <div class="card-body">
+                    <h5 class="card-title">EDUCATION</h5>
+                    <p class="card-text">We support formal & informal schools and ensures the quality of education is accessible to the children from underdeveloped areas of Rurals.</p>
+
+                </div>
+            </div>
+            <div class="card col-sm-12 col-md-4" >
+                
+                <div class="card-body">
+                    <h5 class="card-title">LIVELIHOOD</h5>
+                    <p class="card-text">
+                        HPGVSS agricultural and non-agro-based livelihood programs are exploring the rural income-generating programs.
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="card col-sm-12 col-md-4" >
+                
+                <div class="card-body">
+                    <h5 class="card-title">WATER & SANITATION</h5>
+                    <p class="card-text">We are implementing projects for providing safe drinking water and sanitation facilities.</p>
+                    
+                </div>
+            </div>
+            <div class="card col-sm-12 col-md-4" >
+                
+                <div class="card-body">
+                    <h5 class="card-title">SKILL TRAINING </h5>
+                    <p class="card-text">HPGVSS implementing skill projects for the skill up-gradation for the rural underprivileged youths. providing residential or non-residential training.</p>
+                    
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+<!--footer start-->
+<section class="footer">
+    
+    <h2>contact us</h2>
+    <p>
+        Head Office : At+p.o-sakri Saraiya, Block- Kudhani, District-Muzaffarpur, State-Bihar, India-844127 <br/>Phone number : 0621-2816420 <br/> Contact Number : 9431082520 <br/>Email ID : hpgvss.bih@gmail.com, <br/> hpgvss@yahoo.com
+    </p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <div class="footer-bottom">
+        <p>Copyright © 2021 by HPGVSS </p>
+    </div>
+    
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+
+        $('.stories').slick({
+            dots: false,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+    ]
+});
+</script>
+</body>
 </html>
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+.gallery-block{
+    padding-bottom: 60px;
+    padding-top: 60px;
+
+}
+
+.gallery-block .hadding {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.gallery-block .hadding h2{
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+
+}
+
+.gallery-block .cardsgallery h6{
+    font-size: 17px;
+}
+.card{
+    transition: 0.4s ease;
+}
+.card img{
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.15);
+} 
+
+.card-body{ 
+    text-align: center;
+}
+.card-body p{
+    font-size: 15px;
+}
+.cards-gallery a{
+    color: #212529;
+}
+ .cards-gallery a:hover{
+    text-decoration:none;
+}
+ .card{
+    margin-bottom: 30px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.15);
+}
+@media (min-width: 576px){
+     .transfore-on-hover:hover{
+        transform: translateY(-10px) scale(1.02);
+        box-shadow: opx 10px 10px rgba(0,0,0,0.15) !important;
+    }
+}
