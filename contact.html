@@ -148,7 +148,7 @@ textarea{
              <li><a href="index.html">HOME</a></li>    
              <li><a href="about.html">ABOUT US</a> </li>    
              <li><a href="gallery.html">GALLERY</a></li>    
-             <li><a href="team.html">OUR TEAM</a></li>    
+             <li><a href="team.html">TENDERS</a></li>    
              <li><a href="contact.html">CONTACT US</a></li>    
              </ul>
          </div>
@@ -163,11 +163,13 @@ textarea{
 			<div class="left"></div>
 			<div class="right">
 				<h2>Contact Us</h2>
-				<input type="text" class="field" placeholder="Your Name">
-				<input type="text" class="field" placeholder="Your Email">
-				<input type="text" class="field" placeholder="Phone">
-				<textarea placeholder="Message" class="field"></textarea>
-				<button class="btn">Send</button>
+				<form action="http://localhost:3000/recievedata" method="post"> 
+				<input type="text" name="name"  class="field" placeholder="Your Name">
+				<input type="email" name="email"  class="field" placeholder="Your Email">
+				<input type="tel" name="number"  class="field" placeholder="Phone">
+				<textarea placeholder="Message" name="message" class="field"></textarea>
+				<button type="submit" class="btn">Send</button>
+				</form>
 			</div>
 		</div>
 	</div>
@@ -195,13 +197,13 @@ textarea{
             Head Office : At+p.o-sakri Saraiya, Block- Kudhani, District-Muzaffarpur, State-Bihar, India-844127 <br/>Phone number : 0621-2816420 <br/> Contact Number : 9431082520 <br/>Email ID : hpgvss.bih@gmail.com, <br/> hpgvss@yahoo.com
         </p>
         <div class="icons">
-            <i class="fa fa-facebook"></i>
+            <a href="https://www.facebook.com/hpgvss/"><i class="fa fa-facebook"></i></a>
             <i class="fa fa-twitter"></i>
-            <i class="fa fa-instagram"></i>
+            <a href="https://www.facebook.com/hpgvss/"><i class="fa fa-instagram"></i></a>
             <i class="fa fa-linkedin"></i>
         </div>
         <div class="footer-bottom">
-            <p>Copyright © 2021 by HPGVSS </p>
+            <p>Copyright Â© 2021 by HPGVSS </p>
         </div>
      
      </section>
